@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1)</h2>
+    Get an input of 2 numbers <br />
+    Find all the Prime numbers in between them <br />
+    Print only odd position in that list of prime numbers<br />
+    Make a single max highest value integer from the list of that prime numbers
+    <br />
+    <br />
+    <div>
+      <input type="number" id="primeStart" value="1" />
+      <input type="number" id="primeEnd" value="15" />
+      <button onClick="prime()">enter</button>
+      <h3>Ans : <span id="primeResult"></span></h3>
+    </div>
+
+    <!-- ! 2 -->
+    <h2>2)</h2>
+    Create an account with username and password <br />
+    Login to Created Account <br />
+    Display the welcome name <br />
+    Reset the password with the condition that history of password cannot be
+    used <br />
+    <br />
+
+    <div id="signUpForm">
+      <h3>Sign UP</h3>
+      <label for="userName">Name :</label>
+      <input type="text" id="userName" />
+      <br />
+      <label for="userName">Password :</label>
+      <input type="password" id="userPassword" />
+      <br />
+      <button onClick="singUp()">sign up</button>
+    </div>
+
+    <div id="logInForm">
+      <h3>logIn</h3>
+      KINDLY LOGIN with your current user name and password
+      <br />
+      <br />
+      <label for="userLoginName">Name :</label>
+      <input type="text" id="userLoginName" />
+      <br />
+      <label for="userLoginPassword">Password :</label>
+      <input type="password" id="userLoginPassword" />
+      <br />
+      <button onClick="logIn()">logIn</button>
+      <br />
+
+      <span id="errorMessageLogin"></span>
+    </div>
+
+    <div id="welcomeForm">
+      <h3>Login Success</h3>
+      <h2>welcome <span id="welcomeUserName"></span></h2>
+
+      <br />
+      <br />
+      <label for="updatePassword">Password :</label>
+      <input type="password" id="updatePassword" />
+
+      <button onClick="resetPassword()">Reset Password</button>
+      <br />
+
+      <span id="errorMessage"></span>
+    </div>
+
+    <!-- ! 3 -->
+    <h2>3)</h2>
+    Create a JSON file with the user input (Name, Age, Address (Street, City,
+    PinCode), DOB)
+
+    <br />
+    <br />
+    <label for="jsonName">Name : </label>
+    <input type="text" id="jsonName" />
+    <br />
+
+    <label for="jsonAge">Age : </label>
+    <input type="number" id="jsonAge" />
+    <br />
+
+    <label for="jsonStreet">Street : </label>
+    <input type="text" id="jsonStreet" />
+    <br />
+
+    <label for="jsonCity">City : </label>
+    <input type="text" id="jsonCity" />
+    <br />
+
+    <label for="jsonPinCode">PinCode : </label>
+    <input type="number" id="jsonPinCode" />
+    <br />
+    <label for="jsonDOB">DOB : </label>
+    <input type="date" id="jsonDOB" />
+    <br />
+    <button onClick="getJson()">Get Json</button>
+
+    <span id="jsonResult"> </span>
+
+    <!-- ! 4 -->
+    <h2>4)</h2>
+
+    Read any file in your system, Display their metadata (File name, Modified
+    Date, Created Date, File Type, File Size)
+    <br />
+    <br />
+
+    <input type="file" onChange="file()" id="file" />
+    <br />
+    <br />
+    <div>File Name : <span id="fileName"></span></div>
+    <div>Modified Date : <span id="fileModified"></span></div>
+    <div>File Type : <span id="fileType"></span></div>
+    <div>File Size : <span id="fileSize"></span> bytes</div>
+  </body>
+  <script src="./script.js"></script>
+</html>
